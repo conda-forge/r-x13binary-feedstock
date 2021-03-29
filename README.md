@@ -5,11 +5,9 @@ Home: https://CRAN.R-project.org/package=x13binary
 
 Package license: GPL-2.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-x13binary-feedstock/blob/master/LICENSE.txt)
 
 Summary: The US Census Bureau provides a seasonal adjustment program now called 'X-13ARIMA-SEATS' building on both earlier programs called X-11 and X-12 as well as the SEATS program by the Bank of Spain. The US Census Bureau offers both source and binary versions -- which this package integrates for use by other R packages.
-
-
 
 Current build status
 ====================
@@ -108,9 +106,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
@@ -119,5 +117,6 @@ Feedstock Maintainers
 * [@RyanHackney](https://github.com/RyanHackney/)
 * [@conda-forge/r](https://github.com/conda-forge/r/)
 * [@ndmaxar](https://github.com/ndmaxar/)
+* [@oblute](https://github.com/oblute/)
 * [@rluria14](https://github.com/rluria14/)
 
