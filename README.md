@@ -36,6 +36,7 @@ Installing `r-x13binary` from the `conda-forge` channel can be achieved by addin
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-x13binary` can be installed with:
@@ -116,6 +117,7 @@ Feedstock Maintainers
 
 * [@RyanHackney](https://github.com/RyanHackney/)
 * [@conda-forge/r](https://github.com/conda-forge/r/)
+* [@mxr-conda](https://github.com/mxr-conda/)
 * [@ndmaxar](https://github.com/ndmaxar/)
 * [@oblute](https://github.com/oblute/)
 * [@rluria14](https://github.com/rluria14/)
