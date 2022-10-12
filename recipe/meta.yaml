@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/x13binary_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/x13binary/x13binary_{{ version }}.tar.gz
-  sha256: 6da5c81a937c633b8e66b92831d0ae8ad0d0ea65d15ee0dd4fa8ab3173430ade
+  sha256: b551549a09c1f67923c2a53004c6d53a619d5fb2687d92b683b4abdb25afe06a
 
 build:
   merge_build_host: true  # [win]
