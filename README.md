@@ -1,11 +1,11 @@
-About r-x13binary
-=================
+About r-x13binary-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-x13binary-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=x13binary
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-x13binary-feedstock/blob/main/LICENSE.txt)
 
 Summary: The US Census Bureau provides a seasonal adjustment program now called 'X-13ARIMA-SEATS' building on both earlier programs called X-11 and X-12 as well as the SEATS program by the Bank of Spain. The US Census Bureau offers both source and binary versions -- which this package integrates for use by other R packages.
 
