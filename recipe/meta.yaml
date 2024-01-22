@@ -1,4 +1,4 @@
-{% set version = "1.1.57-4" %}
+{% set version = "1.1.60" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/x13binary_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/x13binary/x13binary_{{ version }}.tar.gz
-  sha256: 0dd76b90602950110e044a15c23259fd8d9b226e879d1c9dfe93a8213b25e901
+  sha256: 2804cfa9b9d6414e09bf5c6c79521f458900b69239e7982ae5372938959d85c1
 
 build:
   merge_build_host: true  # [win]
