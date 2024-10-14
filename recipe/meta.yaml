@@ -1,5 +1,4 @@
 {% set version = "1.1.61" %}
-
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -13,7 +12,7 @@ source:
   sha256: 048ad8f3f281b20591dedc413688ce2d54f5e422aae726689ae4cf3ef0e3ec6c
 
 build:
-  number: 1
+  number: 2
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -22,10 +21,8 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
-
   host:
     - r-base
-
   run:
     - r-base
 
@@ -36,9 +33,14 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=x13binary
-  license: GPL-2.0-or-later
+  license: GPL-2.0-or-later AND LicenseRef-X13AS
   summary: The US Census Bureau provides a seasonal adjustment program now called 'X-13ARIMA-SEATS' building on both earlier programs called X-11 and X-12 as well as the SEATS program by the Bank of Spain. The US Census Bureau offers both source and binary versions -- which this package integrates for use by other R packages.
-  license_file: LICENSE
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
+    - LICENSE
+    - inst/COPYRIGHT
+    - inst/AUTHORS
 
 extra:
   recipe-maintainers:
@@ -48,27 +50,3 @@ extra:
     - RyanHackney
     - conda-forge/r
     - oblute
-
-# The original CRAN metadata for this package was:
-
-# Package: x13binary
-# Type: Package
-# Title: Provide the 'x13ashtml' Seasonal Adjustment Binary
-# Version: 1.1.39-2
-# Date: 2019-05-05
-# Author: Dirk Eddelbuettel and Christoph Sax
-# Maintainer: Dirk Eddelbuettel <edd@debian.org>
-# Description: The US Census Bureau provides a seasonal adjustment program now called 'X-13ARIMA-SEATS' building on both earlier programs called X-11 and X-12 as well as the SEATS program by the Bank of Spain. The US Census Bureau offers both source and binary versions -- which this package integrates for use by other R packages.
-# License: file LICENSE
-# Copyright: file inst/COPYRIGHT
-# RoxygenNote: 5.0.1
-# StagedInstall: no
-# NeedsCompilation: no
-# Packaged: 2019-05-05 16:49:28.227243 UTC; edd
-# License_restricts_use: no
-# Repository: CRAN
-# Date/Publication: 2019-05-07 08:00:03 UTC
-
-# See
-# https://docs.conda.io/projects/conda-build for
-# more information about meta.yaml
