@@ -1,4 +1,4 @@
-{% set version = "1.1.61.1" %}
+{% set version = "1.1.61.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/x13binary_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/x13binary/x13binary_{{ version }}.tar.gz
-  sha256: 9de01c294fe683824094779d530771f3d31e72f12573896fbe3a3179b3e9eab5
+  sha256: 69b2114ce3a429009aeb13cb575d162eadc4625637ce2e5734843f09ab4480bc
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -34,7 +34,8 @@ test:
 about:
   home: https://CRAN.R-project.org/package=x13binary
   license: GPL-2.0-or-later AND LicenseRef-X13AS
-  summary: The US Census Bureau provides a seasonal adjustment program now called 'X-13ARIMA-SEATS' building on both earlier programs called X-11 and X-12 as well as the SEATS program by the Bank of Spain. The US Census Bureau offers both source and binary versions -- which this package integrates for use by other R packages.
+  summary: The US Census Bureau provides a seasonal adjustment program now called 'X-13ARIMA-SEATS' building on both earlier programs called X-11 and X-12 as well as the SEATS program by the Bank of Spain. The US Census Bureau offers both source and binary versions -- which this package integrates for use by other R 
+    packages.
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
